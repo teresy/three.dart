@@ -37,7 +37,7 @@ class Mesh extends Object3D {
 
 
       // setup morph targets
-      if (geometry.morphTargets.length != 0) {
+      if (geometry.morphTargets.isNotEmpty) {
         morphTargetBase = -1;
         morphTargetForcedOrder = [];
         morphTargetInfluences = [];

@@ -462,7 +462,7 @@ class Path extends CurvePath {
 
       if (action == PathAction.MOVE_TO) {
 
-        if (lastPath.actions.length != 0) {
+        if (lastPath.actions.isNotEmpty) {
 
           subPaths.add(lastPath);
           lastPath = new Path();
@@ -475,7 +475,7 @@ class Path extends CurvePath {
 
     }
 
-    if (lastPath.actions.length != 0) {
+    if (lastPath.actions.isNotEmpty) {
 
       subPaths.add(lastPath);
 
